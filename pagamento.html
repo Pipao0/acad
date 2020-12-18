@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+        </style>
+<head>
+    <link href="resources\css\pagamento.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="resources/logo.png">
+    <title>HARD CORE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="default.html" class="logo"> <img src="resources/logo.png" width="300"> </a>
+    <nav>
+        <ul class="menu">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="pagamento.html">Pagamento</a></li>
+        </ul>
+    </nav>
+
+</header>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<h2 style="margin: 30px;">Pagamentos</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form>
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Dados do titular do cartão</h3>
+            <label for="fname"><i class="fa fa-user"></i> Nome completo</label>
+            <input type="text" id="fname" name="firstname" placeholder="Joao M. Silva">
+            <label for="email"><i class="fa fa-envelope"></i> E-mail</label>
+            <input type="text" id="email" name="email" placeholder="joao@exemplo.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Endereço</label>
+            <input type="text" id="adr" name="address" placeholder="Rua Maria Isabel">
+            <label for="city"><i class="fa fa-institution"></i> Cidade</label>
+            <input type="text" id="city" name="city" placeholder="Brasilia">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Estado</label>
+                <input type="text" id="state" name="state" placeholder="São Paulo">
+              </div>
+              <div class="col-50">
+                <label for="zip">CEP</label>
+                <input type="text" id="zip" name="zip" placeholder="12345678">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Pagamento</h3>
+            <label for="fname">Bandeiras</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Nome Completo</label>
+            <input type="text" id="cname" name="cardname" placeholder="Joao M. Silva">
+            <label for="ccnum">Número do cartão</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Data de Validade</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="02/2077">
+            <div class="row">
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <input type="submit" value="Finalizar Pagamento" class="btn">
+      </form>
+    </div>
+  </div>
+  </div>
+</div>
+
+</body>
+</html>
